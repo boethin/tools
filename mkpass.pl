@@ -49,7 +49,6 @@ goto tryagain unless $len <= 3 || scalar grep /[a-z]/, @q;
 goto tryagain unless $len <= 4 || scalar grep /[$qext]/, @q;
 
 print keys %{ { map { $_ => 1 } @q } };
-
 exit;
 __END__
 
